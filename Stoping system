@@ -1,0 +1,8 @@
+local Train = script.parent.parent.Train.VehicleSeat
+local Button = script.parent
+
+Button.Touched:connect(function(hit)
+  Train.throttlefloat = 0
+  wait(5)
+  Train.throttlefloat = -1
+end)
